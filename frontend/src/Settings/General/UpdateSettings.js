@@ -53,8 +53,7 @@ function UpdateSettings(props) {
         <FormInputGroup
           type={inputTypes.TEXT}
           name="branch"
-          helpText={usingExternalUpdateMechanism ? "Branch used by external update mechanism"
-                                                 : "Branch to use to update Sonarr"}
+          helpText={usingExternalUpdateMechanism ? 'Branch used by external update mechanism' : 'Branch to use to update Sonarr'}
           helpLink="https://github.com/Sonarr/Sonarr/wiki/Release-Branches"
           onChange={onInputChange}
           readOnly={usingExternalUpdateMechanism}

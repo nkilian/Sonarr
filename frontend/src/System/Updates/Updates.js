@@ -38,8 +38,8 @@ class Updates extends Component {
 
     const externalUpdaterMessages = {
       external: 'Unable to update Sonarr directly, Sonarr is configured to use an external update mechanism',
-      apt:      'Unable to update Sonarr directly, use apt to install the update',
-      docker:   'Unable to update Sonarr directly, update the docker container to receive the update'
+      apt: 'Unable to update Sonarr directly, use apt to install the update',
+      docker: 'Unable to update Sonarr directly, update the docker container to receive the update'
     };
 
     return (
@@ -77,7 +77,7 @@ class Updates extends Component {
                       />
 
                       <div className={styles.message}>
-                        {externalUpdaterMessages[updateMechanism] || externalUpdaterMessages['external']}
+                        {externalUpdaterMessages[updateMechanism] || externalUpdaterMessages.external}
                       </div>
                     </Fragment>
                 }
